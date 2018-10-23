@@ -1,2 +1,16 @@
 io_get_stdout
 resource_write
+
+# https://golang.org/src/syscall/js/js_js.s
+syscall/js.stringVal
+syscall/js.valueGet
+syscall/js.valueSet
+syscall/js.valueIndex
+syscall/js.valueSetIndex
+syscall/js.valueCall
+syscall/js.valueInvoke
+syscall/js.valueNew
+syscall/js.valueLength
+syscall/js.valuePrepareString
+syscall/js.valueLoadString
+syscall/js.valueInstanceOf
