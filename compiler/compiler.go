@@ -157,6 +157,11 @@ func (c *Compiler) Module() llvm.Module {
 	return c.mod
 }
 
+// Return the LLVM target data object. Only valid after a successful compile.
+func (c *Compiler) TargetData() llvm.TargetData {
+	return c.targetData
+}
+
 // Compile the given package path or .go file path. Return an error when this
 // fails (in any stage).
 func (c *Compiler) Compile(mainPath string) error {
