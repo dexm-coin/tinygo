@@ -4,14 +4,18 @@ package runtime
 
 type timeUnit int64	
 const tickMicros = 1
+var timestamp timeUnit
 
 func putchar(c byte) {
 }
 
 func sleepTicks(d timeUnit) {
+	timestamp += d
 }
 
-func ticks() timeUnit {}
+func ticks() timeUnit {
+	return timestamp
+}
 
 // Align on word boundary.
 func align(ptr uintptr) uintptr {
