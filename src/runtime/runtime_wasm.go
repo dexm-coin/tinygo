@@ -2,6 +2,9 @@
 
 package runtime
 
+type timeUnit int64	
+const tickMicros = 1
+
 func putchar(c byte) {
 }
 
